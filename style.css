@@ -288,72 +288,125 @@ background-color: #E76F51;
 }
 /* reservations style end */
 
-/* header style start */
-/* header style end */
+/* footer style start */
+footer{
+    background-color: #333333;
+    padding: 1rem 2rem;
+    color: white;
+}
+.footer-info-p{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.footer-brand{
+    font-family: 'Rancho' cursive;
+    font-size: 4rem;
+    display: block;
+}
+.footer-social{
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+    margin: 1rem auto;
+    font-size: 2.5rem;
+}
+.footer-title {
+    color: #E76F51;
+    position: relative;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+.footer-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0.5rem;
+    border-bottom: 1px solid white;
+    width: 25%;
+}
+.footer-times {
+    list-style: none;
+}
+.footer-map {
+    width: 50%;
+    display: block;
+    margin: 1rem auto;
+}
+.direction{
+    margin-bottom: 1rem;
+}
+.copyright {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+/* footer style end */
 @media screen and (min-width: 725px) {
     
-    body {
+    body{
         max-width: 960px;
         margin: 0 auto;
     }
-    main {
+    main{
         padding: 0;
     }
 
-    header nav ul {
+    header nav ul{
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    header nav ul li {
+    header nav ul li{
         display: inline;
         font-size: 1.2rem;
         font-weight: bold;
     }
 
-    #burger-menu {
+    #burger-menu{
         display: none;
     }
     .hero {
         display: flex;
         padding: 1rem;
     }
-    .hero-info {
+    .hero-info{
         padding: 1rem;
     }
-    .hero-info-block {
+    .hero-info-block{
         display: block;
     }
-    #hero-buttons {
+    #hero-buttons{
         justify-content: flex-start;
     }
-    #hero-image {
+    #hero-image{
         width: 375px;
 }
-.specialities {
+.specialities{
     padding: 2rem;
     background-color: #efefef;
 }
-.speciality-item {
+.speciality-item{
     display: flex;
     align-items: center;
     gap: 4rem;
     margin-bottom: 2rem;
 }
-.speciality-img {
+.speciality-img{
     width: 375px;
 }
-.price {
+.price{
     flex-direction: column;
     align-items: flex-start;
 }
-.price span {
+.price span{
     margin-bottom: 1rem;
 }
-.speciality-item:last-child .speciality-img {
+.speciality-item:last-child .speciality-img{
     order: 1;
 }
-.speciality-item:last-child .speciality-info {
+.speciality-item:last-child .speciality-info{
     order: 2;
 }
 .menu-container {
@@ -383,7 +436,21 @@ height: 350px;
     right: 50px;
     background-color: rgba(0,0,0,0.75);
     width: 40%;
-    height: 92%;
+    height: 92.5%;
     border-radius: 5px;
+}
+.reservation-img {
+    object-fit: none;
+    border-bottom: 50px;
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    gap: 2rem;
+}
+.footer-1,.footer-2,.footer-3 {
+    flex: 1 1 350px
 }
 }
